@@ -1,0 +1,20 @@
+.form {
+  label {
+    float:left;
+  }
+
+  span {
+    display: block;
+    overflow: hidden;
+  }
+
+  input#url {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  input#auth_token {
+    width: 300px;
+    box-sizing: border-box;
+  }
+}
