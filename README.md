@@ -37,3 +37,7 @@ curl -X POST --form 'auth_token=some_string' --form 'url=http://en.wikipedia.org
 
 Or just use a simple web interface available at the root,
 go to `http://localhost:9292/` and try it.
+
+# License
+
+MIT. See the `LICENSE` file for more info.
