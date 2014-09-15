@@ -38,6 +38,9 @@ curl -X POST --form 'auth_token=some_string' --form 'url=http://en.wikipedia.org
 Or just use a simple web interface available at the root,
 go to `http://localhost:9292/` and try it.
 
+See also [OpenCalais Ext](https://github.com/antlypls/open_calais_ext) chrome
+extension that utilizes provided API.
+
 # License
 
 MIT. See the `LICENSE` file for more info.
