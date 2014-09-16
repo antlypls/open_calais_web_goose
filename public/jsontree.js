@@ -1,3 +1,5 @@
+// based on http://jurka.github.io/jsontree/
+
 ! function($) {
   "use strict"; // jshint ;_;
 
