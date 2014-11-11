@@ -8,7 +8,7 @@ class CalaisWeb < Sinatra::Base
   enable :logging
 
   get '/' do
-    render :slim, :index
+    slim :index
   end
 
   post '/url' do
