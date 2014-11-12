@@ -1,13 +1,13 @@
 doctype html
-html[lang="en-US"]
+html lang='en-US'
   head
-    meta[charset="utf-8"]
+    meta charset='utf-8'
     title Open Calais
-    script type="text/javascript" charset="utf-8" src="//code.jquery.com/jquery-1.11.0.min.js"
-    script type="text/javascript" charset="utf-8" src="/jsontree.js"
-    script type="text/javascript" charset="utf-8" src="/js/application.js"
-    link rel="stylesheet" type="text/css" href="/jsontree.css"
-    link rel="stylesheet" type="text/css" href="/css/application.css"
+    script type='text/javascript' charset='utf-8' src='//code.jquery.com/jquery-1.11.0.min.js'
+    script type='text/javascript' charset='utf-8' src='/jsontree.js'
+    script type='text/javascript' charset='utf-8' src='/js/application.js'
+    link rel='stylesheet' type='text/css' href='/jsontree.css'
+    link rel='stylesheet' type='text/css' href='/css/application.css'
 
   body
     h1 Open Calais
@@ -16,12 +16,12 @@ html[lang="en-US"]
       .url
         label Url:
         span
-          input#url type="text" autocomplete="off" value=""
+          input#url type='text' autocomplete='off' value=''
 
       .token
         label Auth Token:
         span
-          input#auth_token type="text" autocomplete="off"
+          input#auth_token type='text' autocomplete='off'
 
       button#get_info Submit
     #result
