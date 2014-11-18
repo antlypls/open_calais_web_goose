@@ -1,4 +1,8 @@
+require_relative 'goose-2.1.22-jar-with-dependencies.jar'
+
 class CalaisService
+  include_package 'com.gravity.goose'
+
   CALAIS_SERVICE = 'https://api.opencalais.com/tag/rs/enrich'
 
   def initialize(api_key)
@@ -45,13 +49,10 @@ class CalaisService
   end
 
   def fetch_page(url)
-    conn = Faraday.new do |b|
-      b.response :follow_redirects
-      b.adapter Faraday.default_adapter
-    end
-
-    response = conn.get(url)
-    response.body
+    configuration = Configuration.new
+    extractor = Goose.new(configuration)
+    article = extractor.extractContent(url)
+    article.cleanedArticleText
   end
 
   def post_calais_request(data)
