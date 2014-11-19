@@ -2,6 +2,8 @@
 
 This is a small web service to experiment with fetching semantic metadata using [OpenCalais](http://www.opencalais.com/).
 
+> **NOTE** This is same as [https://github.com/antlypls/open_calais_web](https://github.com/antlypls/open_calais_web). But it uses jruby and [goose](https://github.com/GravityLabs/goose) to fetch page content.
+
 ## How To Run
 
 First, you need to get an API key from the [OpenCalais web site](http://www.opencalais.com/APIkey).
